@@ -126,7 +126,7 @@ export function Pricing() {
             name="Hardcover"
             description="भौतिक पुस्तक"
             price="120"
-            href="upi://pay?pa=8800108844@paytm&pn=Sanatan%20Das&am=120&cu=INR&tn=Bhagavad%20Gita%20Book%20Purchase"
+            href="upi://pay?pa=sanjaychowdhary@upi&pn=Sanatan%20Das&am=120&cu=INR&tn=Bhagavad%20Gita%20Book%20Purchase"
             features={[
               'हार्डकवर पुस्तक',
               'सभी 18 अध्याय',
@@ -147,7 +147,7 @@ export function Pricing() {
                     "खरीदें" बटन पर क्लिक करें या ₹120 भेजें इस UPI ID पर:
                   </p>
                   <p className="mt-1 font-mono text-lg font-semibold text-amber-600">
-                    8800108844@paytm
+                    sanjaychowdhary@upi
                   </p>
                 </div>
                 <div>
