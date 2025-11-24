@@ -9,8 +9,8 @@ function Testimonial() {
     <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          भगवद्गीता आनंद का सागर है।सनातन प्रभु ने उसमें गोता लगा कर, दिव्य
-          रतनों को खोज निकाला है
+          भगवद्गीता आनंद का सागर है। सनातन प्रभु ने उसमें अवगाहन करके, दिव्य
+          रत्नों को खोजे हैं
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">

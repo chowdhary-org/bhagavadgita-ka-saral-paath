@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'भगवद्गीता का सरल पाठ - Bhagavadgītā Kā Saral Pāṭh',
   description:
-    'भगवद्गीता का सरल पाठ - एक सरल और सुलभ हिंदी अनुवाद जो भगवद्गीता के गूढ़ रहस्यों को समझने में मदद करता है।',
+    'भगवद्गीता का सरल पाठ - एक सरल और सुलभ हिंदी अनुवाद जो भगवद्गीता के गूढ़ रहस्यों को समझने में सहायता करता है।',
 }
 
 export default function RootLayout({

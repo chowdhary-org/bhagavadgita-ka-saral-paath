@@ -142,7 +142,7 @@ export function Pricing() {
               </h3>
               <div className="mt-6 space-y-6 text-base tracking-tight text-slate-700">
                 <div>
-                  <p className="font-semibold text-slate-900">1. भुगतान करें</p>
+                  <p className="font-semibold text-slate-900">1. अदायगी करें</p>
                   <p className="mt-2">
                     "खरीदें" बटन पर क्लिक करें या ₹120 भेजें इस UPI ID पर:
                   </p>
@@ -170,7 +170,7 @@ export function Pricing() {
                     3. पुस्तक प्राप्त करें
                   </p>
                   <p className="mt-2">
-                    हम आपकी पुस्तक जल्द से जल्द आपके पते पर भेज देंगे।
+                    हम आपकी पुस्तक शीघ्रातिशीघ्र आपके पते पर भेज देंगे।
                   </p>
                 </div>
               </div>
