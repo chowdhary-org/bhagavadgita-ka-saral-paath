@@ -4,7 +4,6 @@ import { Button } from '@/components/Button'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
-import { SectionHeading } from '@/components/SectionHeading'
 
 function Plan({
   name,
@@ -57,7 +56,7 @@ function Plan({
               featured ? 'text-amber-200' : 'text-slate-500',
             )}
           >
-            $
+            ₹
           </span>
           <span
             className={clsx(
@@ -95,9 +94,9 @@ function Plan({
           href={href}
           color={featured ? 'white' : 'slate'}
           className="mt-8"
-          aria-label={`Get started with the ${name} plan for $${price}`}
+          aria-label={`Buy the ${name} edition for ₹${price}`}
         >
-          Get started
+          खरीदें
         </Button>
       </div>
     </div>
@@ -107,49 +106,76 @@ function Plan({
 export function Pricing() {
   return (
     <section
-      id="pricing"
-      aria-labelledby="pricing-title"
+      id="purchase"
+      aria-labelledby="purchase-title"
       className="scroll-mt-14 pt-16 pb-8 sm:scroll-mt-32 sm:pt-20 sm:pb-10 lg:pt-32 lg:pb-16"
     >
       <Container>
-        <SectionHeading number="4" id="pricing-title">
-          Pricing
-        </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pick your package
+          पुस्तक खरीदें
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          “Everything Starts as a Square” is available in two different packages
-          so you can pick the one that’s right for you.
+          "भगवद्गीता का सरल पाठ" अभी उपलब्ध है। आप इसे विभिन्न प्लेटफॉर्म से
+          खरीद सकते हैं।
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
-        <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
-          <Plan
-            name="Essential"
-            description="The perfect starting point if you’re on a budget."
-            price="15"
-            href="#"
-            features={[
-              'The 240-page ebook',
-              'Figma icon templates',
-              'Community access',
-            ]}
-          />
+        <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:gap-8 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
             featured
-            name="Complete"
-            description="Everything icon resource you could ever ask for."
-            price="229"
-            href="#"
+            name="Hardcover"
+            description="भौतिक पुस्तक"
+            price="120"
+            href="upi://pay?pa=8800108844@paytm&pn=Sanatan%20Das&am=120&cu=INR&tn=Bhagavad%20Gita%20Book%20Purchase"
             features={[
-              'The 240-page ebook',
-              'Figma icon templates',
-              'Over an hour of screencasts',
-              'Weekly icon teardowns',
-              'Community access',
+              'हार्डकवर पुस्तक',
+              'सभी 18 अध्याय',
+              'सरल हिंदी अनुवाद',
+              'उच्च गुणवत्ता प्रिंट',
+              'टिकाऊ बाइंडिंग',
             ]}
           />
+          <div className="relative px-4 py-16 sm:px-10 md:py-12 lg:px-12">
+            <div className="relative flex flex-col">
+              <h3 className="mt-7 text-lg font-semibold tracking-tight text-slate-900">
+                कैसे खरीदें
+              </h3>
+              <div className="mt-6 space-y-6 text-base tracking-tight text-slate-700">
+                <div>
+                  <p className="font-semibold text-slate-900">1. भुगतान करें</p>
+                  <p className="mt-2">
+                    "खरीदें" बटन पर क्लिक करें या ₹120 भेजें इस UPI ID पर:
+                  </p>
+                  <p className="mt-1 font-mono text-lg font-semibold text-amber-600">
+                    8800108844@paytm
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-900">2. पता भेजें</p>
+                  <p className="mt-2">
+                    इस नंबर पर WhatsApp करें और अपना पूरा पता भेजें:
+                  </p>
+                  <p className="mt-1 font-mono text-lg font-semibold text-amber-600">
+                    8800108844
+                  </p>
+                  <ul className="mt-2 ml-4 list-disc space-y-1 text-slate-700">
+                    <li>नाम</li>
+                    <li>पूरा पता</li>
+                    <li>शहर और पिन कोड</li>
+                    <li>फोन नंबर</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-900">
+                    3. पुस्तक प्राप्त करें
+                  </p>
+                  <p className="mt-2">
+                    हम आपकी पुस्तक जल्द से जल्द आपके पते पर भेज देंगे।
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

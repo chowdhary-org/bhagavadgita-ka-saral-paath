@@ -49,12 +49,9 @@ export function Hero() {
             <p className="mt-4 text-3xl text-slate-600">
               Bhagavadgītā Kā Saral Pāṭh
             </p>
-            <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
-                Get sample chapter
-              </Button>
-              <Button href="#pricing" variant="outline" color="blue">
-                Buy book
+            <div className="mt-8">
+              <Button href="#purchase" color="blue">
+                पुस्तक खरीदें
               </Button>
             </div>
           </div>
