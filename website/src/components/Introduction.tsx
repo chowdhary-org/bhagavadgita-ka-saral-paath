@@ -12,29 +12,24 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “Everything Starts as a Square” is a book and video course that
-          teaches you a simple method to designing icons that anyone can learn.
+          "भगवद्गीता का सरल पाठ" एक सरल और सुलभ हिंदी संकलन है जो भगवद्गीता के गूढ़ रहस्यों को समझने में मदद करता है।
         </p>
         <p className="mt-4">
-          Before I learned how to design icons myself, I always imagined that
-          they were drawn by hand using the pen tool, some sort of fancy
-          graphics tablet, and hours and hours spent manually fine-tuning bezier
-          curves.
+          भगवद्गीता आध्यात्मिक ज्ञान का अमूल्य खजाना है। यह पुस्तक भगवद्गीता के श्लोकों को सरल हिंदी में प्रस्तुत करती है, जिससे हर कोई इसके गहन अर्थों को समझ सके।
         </p>
         <p className="mt-4">
-          But it turns out this isn’t how great icon designers work at all.
+          सनातन दास जी ने भगवद्गीता के दिव्य रहस्यों को सरल भाषा में प्रस्तुत किया है।
         </p>
         <p className="mt-4">
-          In “Everything Starts as a Square”, you’ll learn the systems experts
-          use to create pixel perfect icons, without relying on a steady hand.
+          "भगवद्गीता का सरल पाठ" में आप सीखेंगे कि कैसे भगवान कृष्ण ने अर्जुन को जीवन के महत्वपूर्ण सवालों के जवाब दिए।
         </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
-            'Using boolean operations to combine basic shapes into complex icons',
-            'How to adapt icons to different sizes',
-            'Translating icons from an outline style to a solid style',
-            'Identifying the characteristics that make an icon set cohesive',
-            'Figma features and keyboard shortcuts to speed up your workflow',
+            'सरल हिंदी में भगवद्गीता के श्लोकों का अनुवाद',
+            'प्रत्येक अध्याय की विस्तृत व्याख्या',
+            'आध्यात्मिक ज्ञान और जीवन में उसका उपयोग',
+            'कर्म, भक्ति, और ज्ञान योग का सार',
+            'दैनिक जीवन में भगवद्गीता के सिद्धांतों को लागू करना',
           ].map((feature) => (
             <li key={feature} className="flex">
               <CheckIcon className="h-8 w-8 flex-none fill-amber-500" />
@@ -43,16 +38,14 @@ export function Introduction() {
           ))}
         </ul>
         <p className="mt-8">
-          By the end of the book, you’ll have all the confidence you need to dig
-          in and start creating beautiful icons that can hold their own against
-          any of the sets you can find online.
+          इस पुस्तक को पढ़ने के बाद, आपको भगवद्गीता के गहन अर्थों को समझने और अपने जीवन में लागू करने का आत्मविश्वास प्राप्त होगा।
         </p>
         <p className="mt-10">
           <Link
             href="#free-chapters"
             className="text-base font-medium text-amber-600 hover:text-amber-800"
           >
-            Get two free chapters straight to your inbox{' '}
+            नमूना अध्याय पढ़ें{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>

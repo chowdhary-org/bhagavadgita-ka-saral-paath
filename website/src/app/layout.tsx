@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Everything Starts as a Square - Get lost in the world of icon design',
+  title: 'भगवद्गीता का सरल पाठ - Bhagavadgītā Kā Saral Pāṭh',
   description:
-    'A book and video course that teaches you how to design your own icons from scratch.',
+    'भगवद्गीता का सरल पाठ - एक सरल और सुलभ हिंदी अनुवाद जो भगवद्गीता के गूढ़ रहस्यों को समझने में मदद करता है।',
 }
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="hi"
       className={clsx(
         'h-full scroll-smooth bg-white antialiased',
         inter.variable,
