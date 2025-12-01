@@ -126,7 +126,7 @@ export function Pricing() {
             name="Hardcover"
             description="भौतिक पुस्तक"
             price="120"
-            href="upi://pay?pa=8800108844@ptsbi&pn=Sanjay%20Chowdhary&am=120&cu=INR&tn=Bhagavad%20Gita%20Book%20Purchase"
+            href="https://rzp.io/rzp/VNHuvyc"
             features={[
               'हार्डकवर पुस्तक',
               'सभी 18 अध्याय',
@@ -142,28 +142,20 @@ export function Pricing() {
               </h3>
               <div className="mt-6 space-y-6 text-base tracking-tight text-slate-700">
                 <div>
-                  <p className="font-semibold text-slate-900">1. अदायगी करें</p>
+                  <p className="font-semibold text-slate-900">1. ऑर्डर करें</p>
                   <p className="mt-2">
-                    "खरीदें" बटन पर क्लिक करें या ₹120 भेजें इस UPI ID पर:
-                  </p>
-                  <p className="mt-1 font-mono text-lg font-semibold text-amber-600">
-                    8800108844@ptsbi
+                    "खरीदें" बटन पर क्लिक करें और आप हमारे पेमेंट पेज पर पहुंच
+                    जाएंगे।
                   </p>
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900">2. पता भेजें</p>
+                  <p className="font-semibold text-slate-900">
+                    2. जानकारी भरें
+                  </p>
                   <p className="mt-2">
-                    इस नंबर पर WhatsApp करें और अपना पूरा पता भेजें:
+                    अपनी डिलीवरी जानकारी (नाम, पता, फोन नंबर) और भुगतान विवरण
+                    भरें।
                   </p>
-                  <p className="mt-1 font-mono text-lg font-semibold text-amber-600">
-                    8800108844
-                  </p>
-                  <ul className="mt-2 ml-4 list-disc space-y-1 text-slate-700">
-                    <li>नाम</li>
-                    <li>पूरा पता</li>
-                    <li>शहर और पिन कोड</li>
-                    <li>फोन नंबर</li>
-                  </ul>
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">
