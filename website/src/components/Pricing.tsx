@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 
@@ -9,14 +8,14 @@ function Plan({
   name,
   description,
   price,
-  features,
+  buttonLabel,
   href,
   featured = false,
 }: {
   name: string
   description: string
   price: string
-  features: Array<string>
+  buttonLabel: string
   href: string
   featured?: boolean
 }) {
@@ -67,36 +66,13 @@ function Plan({
             {price}
           </span>
         </p>
-        <div className="order-last mt-8">
-          <ul
-            role="list"
-            className={clsx(
-              '-my-2 divide-y text-base tracking-tight',
-              featured
-                ? 'divide-white/10 text-white'
-                : 'divide-slate-200 text-slate-900',
-            )}
-          >
-            {features.map((feature) => (
-              <li key={feature} className="flex py-2">
-                <CheckIcon
-                  className={clsx(
-                    'h-8 w-8 flex-none',
-                    featured ? 'fill-white' : 'fill-slate-600',
-                  )}
-                />
-                <span className="ml-4">{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
         <Button
           href={href}
           color={featured ? 'white' : 'slate'}
           className="mt-8"
-          aria-label={`Buy the ${name} edition for ₹${price}`}
+          aria-label={`${buttonLabel} - Buy the ${name} edition for ₹${price}`}
         >
-          खरीदें
+          {buttonLabel}
         </Button>
       </div>
     </div>
@@ -123,51 +99,19 @@ export function Pricing() {
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:gap-8 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
             featured
-            name="Hardcover"
-            description="भौतिक पुस्तक"
+            name="Home Delivery / होम डिलीवरी"
+            description="Get the book delivered to your doorstep / पुस्तक आपके घर पर पहुंचाई जाएगी"
             price="120"
+            buttonLabel="Buy with Home Delivery / होम डिलीवरी के लिए खरीदें"
             href="https://rzp.io/rzp/VNHuvyc"
-            features={[
-              'हार्डकवर पुस्तक',
-              'सभी 18 अध्याय',
-              'सरल हिंदी अनुवाद',
-              'उच्च गुणवत्ता प्रिंट',
-              'टिकाऊ बाइंडिंग',
-            ]}
           />
-          <div className="relative px-4 py-16 sm:px-10 md:py-12 lg:px-12">
-            <div className="relative flex flex-col">
-              <h3 className="mt-7 text-lg font-semibold tracking-tight text-slate-900">
-                कैसे खरीदें
-              </h3>
-              <div className="mt-6 space-y-6 text-base tracking-tight text-slate-700">
-                <div>
-                  <p className="font-semibold text-slate-900">1. ऑर्डर करें</p>
-                  <p className="mt-2">
-                    "खरीदें" बटन पर क्लिक करें और आप हमारे पेमेंट पेज पर पहुंच
-                    जाएंगे।
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">
-                    2. जानकारी भरें
-                  </p>
-                  <p className="mt-2">
-                    अपनी डिलीवरी जानकारी (नाम, पता, फोन नंबर) और भुगतान विवरण
-                    भरें।
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">
-                    3. पुस्तक प्राप्त करें
-                  </p>
-                  <p className="mt-2">
-                    हम आपकी पुस्तक शीघ्रातिशीघ्र आपके पते पर भेज देंगे।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Plan
+            name="In-Person Pickup / व्यक्तिगत रूप से"
+            description="Pay online and collect in person / ऑनलाइन भुगतान करें और व्यक्तिगत रूप से लें"
+            price="120"
+            buttonLabel="Buy for In-Person Pickup / व्यक्तिगत रूप से लेने के लिए खरीदें"
+            href="https://rzp.io/rzp/Jj1cLIC"
+          />
         </div>
       </div>
     </section>
